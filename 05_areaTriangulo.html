@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
-
+    let base = prompt("Insira o valor da base do triângulo")
+    let altura = prompt("Insira o valor da altura do triângulo")
+    let area = 0
     //Processamento
-
-
+    function calculo() {
+        let calculoArea = (base * altura) / 2
+        return calculoArea
+    }
+    area = calculo()
     //Saída
+    alert(`O valor da área é ${area.toFixed(2)}`)
 
 </script>

@@ -7,11 +7,21 @@
     */
 
     //Entrada
-
-
+    let palavra = prompt("Insira uma palavra").toLowerCase()
     //Processamento
+    function contagem() {
+        let cont = 0;
+        for (const letra of palavra) {
+            if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u" ) {
+                cont++
+            }
+        }
+        return cont;
+    }
 
+    let quantVogais = contagem();
 
     //Saída
+    alert(`A palavra ${palavra} tem ${quantVogais} vogais`)
 
 </script>

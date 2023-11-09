@@ -4,12 +4,18 @@
     Peça para o usuário informar um número inteiro. Calcule o fatorial do número informado pelo usuário, usando função JavaScript e retorne o resultado para o usuário.
     */
 
-    //Entrada
-
-
+      //Entrada
+    let numeroInteiro = parseInt(prompt("Insira um número inteiro:"));
+    let numeroFatorado = numeroInteiro;
     //Processamento
-
+    function fatorando() {
+        for (let i = numeroInteiro-1; i > 0; i--) {
+            numeroFatorado = numeroFatorado * i;
+        }
+        return numeroFatorado;
+    }
 
     //Saída
+    alert(`O número ${numeroInteiro} fatorado, é: ${fatorando()}`);
 
 </script>
